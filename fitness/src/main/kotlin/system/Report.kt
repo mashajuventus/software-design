@@ -18,7 +18,7 @@ class Report(private val repository: EventsRepository) {
                 prevCheckIn = event.time
             }
             is UserCheckOuted -> {
-//                requireNotNull(prevCheckIn)
+                requireNotNull(prevCheckIn)
                 duration += Duration.between(prevCheckIn, event.time)
             }
         }

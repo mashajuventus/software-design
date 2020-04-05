@@ -11,7 +11,6 @@ import java.util.concurrent.TimeUnit
 
 internal class TestManager {
     private lateinit var executor: ExecutorService
-
     private lateinit var repository: EventsRepository
     private lateinit var manager: Manager
 
